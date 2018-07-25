@@ -1,0 +1,51 @@
+.todo-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.todo-header {
+  padding: 30px;
+  background-color: #e23636;
+  color: rgba(255, 255, 255, 1);
+}
+
+.todo-header h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.todo-header .user-input input[type="text"] {
+  width: 87%;
+  padding: 10px;
+}
+
+.todo-header .user-input button {
+  padding: 11px;
+  background-color: #2e8bbf;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#todo-list {
+  padding: 50px;
+}
+
+.no-items {
+  text-align: center;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  padding: 10px;
+  background: #eee;
+  margin-bottom: 10px;
+}
+
+#todo-actions .action {
+  margin: 0 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,1 @@
+// Bind events for edit and delete.

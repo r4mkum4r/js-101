@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+
+<head>
+  <meta charset="utf-8">
+  <title>Backbone.js - Todo</title>
+  <link rel="stylesheet" href="../styles/todo.css">
+</head>
+
+<body>
+  <div class="todo-wrapper">
+    <header class="todo-header">
+      <h3 My ToDo List </h3>
+        <div class="user-input">
+          <input type="text" name="new-todo" id="new-todo" placeholder="New todo" autofocus>
+          <button type="button" id="add-todo" class="add-todo">
+            Add new todo
+          </button>
+        </div>
+    </header>
+    <section id="todo-list">
+      <div class="no-items">
+        No todo item added.
+      </div>
+    </section>
+  </div>
+  <script type="text/template" id="item-template">
+    <div class="todo-value">
+      <%- todoValue %>
+    </div>
+    <div id="todo-actions">
+      <span class="action edit">&#35;</span>
+      <span class="action delete">X</span>
+    </div>
+  </script>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components//underscore/underscore.js"></script>
+  <script src="../bower_components/backbone/backbone.js"></script>
+  <script src="todo-model.js"></script>
+  <script src="todo-collection.js"></script>
+  <script src="todo-view.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
